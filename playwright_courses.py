@@ -28,7 +28,15 @@ with sync_playwright() as playwright:
     context = browser.new_context(storage_state="browser-state.json")
     page = context.new_page()
 
-    page.goto("https://nikita-filonov.github.io/qa-automation-engineer-ui-course/#/dashboard")
+    page.goto("https://nikita-filonov.github.io/qa-automation-engineer-ui-course/#/courses")
+
+    courses_title = page.get_by_test_id("courses-list-toolbar-title-text")
+    expect(courses_title).to_be_visible()
+    expect(courses_title).to_have_text("Courses")
+
+    courses_empty_list_title = page.get_by_test_id("courses-list-empty-view-title-text")
+    expect(courses_empty_list_title).to_be_visible()
+    expect(courses_empty_list_title).to_have_text("There is no results")
 
     page.wait_for_timeout(5000)
 
