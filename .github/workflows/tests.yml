@@ -27,6 +27,16 @@ jobs:
           pip install -r requirements.txt
           playwright install --with-deps
 
+      - name: Create .env file
+        run: |
+          echo "APP_URL=${{ secrets.APP_URL }}" >> .env
+          echo "HEADLESS=true" >> .env
+          echo "BROWSERS=chromium" >> .env
+          echo "TEST_USER.EMAIL=user.name@gmail.com" >> .env
+          echo "TEST_USER.USERNAME=username" >> .env
+          echo "TEST_USER.PASSWORD=password" >> .env
+          echo "TEST_DATA.IMAGE_PNG_FILE=./testdata/files/image.png" >> .env
+
       - name: Run Playwright tests with pytest and generate Allure results
         run: |
           pytest -m regression --alluredir=allure-results --numprocesses 2
