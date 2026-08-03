@@ -2,14 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="85f62d16-f51b-4685-92e9-90f63d11d0e4" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/base_component.py" beforeDir="false" afterPath="$PROJECT_DIR$/components/base_component.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/elements/base_element.py" beforeDir="false" afterPath="$PROJECT_DIR$/elements/base_element.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/elements/button.py" beforeDir="false" afterPath="$PROJECT_DIR$/elements/button.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/elements/file_input.py" beforeDir="false" afterPath="$PROJECT_DIR$/elements/file_input.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/elements/input.py" beforeDir="false" afterPath="$PROJECT_DIR$/elements/input.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/elements/textarea.py" beforeDir="false" afterPath="$PROJECT_DIR$/elements/textarea.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/base_page.py" beforeDir="false" afterPath="$PROJECT_DIR$/pages/base_page.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config.py" beforeDir="false" afterPath="$PROJECT_DIR$/config.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/conftest.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests/conftest.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
