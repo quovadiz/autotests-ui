@@ -1,0 +1,47 @@
+# Python / Virtual Environment
+.venv/
+venv/
+ENV/
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sast/
+sdist/
+var/
+wheels/
+share/python-wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+MANIFEST
+
+# Pytest
+.pytest_cache/
+.mypy_cache/
+.tox/
+
+# Environment variables & secrets
+.env
+
+# Session / Browser states
+browser-state.json
+
+# Allure reports and results
+allure-results/
+allure-report/
+
+# Playwright artifacts (videos, traces, screenshots)
+videos/
+tracing/
+test-results/
