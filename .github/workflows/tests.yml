@@ -31,7 +31,7 @@ jobs:
         run: |
           cat << EOF > .env
           APP_URL="https://nikita-filonov.github.io/qa-automation-engineer-ui-course"
-          HEADLESS=false
+          HEADLESS=true
           BROWSERS=["chromium", "firefox"]
           TEST_USER.EMAIL="${{ secrets.TEST_USER_EMAIL }}"
           TEST_USER.USERNAME="${{ secrets.TEST_USER_USERNAME }}"
