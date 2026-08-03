@@ -49,21 +49,13 @@ jobs:
         continue-on-error: true
         with:
           ref: gh-pages
-          path: gh-pages
+          path: allure-history
 
-      - name: Generates Allure Report with history
+      - name: Generates Allure Report with history and deploy
         uses: simple-elf/allure-report-action@v1.15
         if: always()
         with:
           allure_results: allure-results
           allure_history: allure-history
           gh_pages: gh-pages
-
-      - name: Deploy report to Github Pages
-        if: always()
-        uses: peaceiris/actions-gh-pages@v4
-        with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_branch: gh-pages
-          publish_dir: allure-history
-          enable_jekyll: false
