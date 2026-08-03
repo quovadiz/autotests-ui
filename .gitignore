@@ -1,3 +1,6 @@
+# pycharm
+.idea
+
 # Python / Virtual Environment
 .venv/
 venv/
@@ -45,3 +48,5 @@ allure-report/
 videos/
 tracing/
 test-results/
+*.html
+*.json
