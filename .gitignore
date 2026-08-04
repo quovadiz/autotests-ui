@@ -50,3 +50,9 @@ tracing/
 test-results/
 *.html
 *.json
+
+# coverage
+coverage.html
+coverage-results
+coverage-report.json
+coverage-history.json
